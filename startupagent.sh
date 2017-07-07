@@ -1,6 +1,4 @@
 #!/bin/bash
-masterip=10.154.0.2
-masterfqdn=ubuntu14main.c.devops-172112.internal
 
 #Install ntp for syncing time
 sudo apt-get install -y ntpdate
