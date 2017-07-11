@@ -1,3 +1,5 @@
+#!/bin/bash
+
 master=$(facter fqdn)
 ip=$(facter ipaddress)
 dir=$(pwd)
