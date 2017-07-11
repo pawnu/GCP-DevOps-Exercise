@@ -30,10 +30,10 @@ sudo sed -i "1 a server=\\$masterfqdn" /etc/puppet/puppet.conf
 sudo wget -qO- https://get.docker.com/ | sh
 
 #Pull tomcat
-sudo docker pull tomcat
+sudo docker pull cloudesire/tomcat:8-jre8
 
 #Run tomcat
-docker run -d -p 8083:8080 --name tomcatdemo tomcat
+sudo docker run -d -p 8083:8080 --name tomcatdemo cloudesire/tomcat:7-jre8
 
 #Start the agent
 sudo puppet resource service puppet ensure=running enable=true
