@@ -33,7 +33,7 @@ sudo wget -qO- https://get.docker.com/ | sh
 sudo docker pull sonatype/nexus
 
 #Run nexus
-docker run -d -p 8082:8081 --name nexusdemo sonatype/nexus
+sudo docker run -d -p 8082:8081 --name nexusdemo sonatype/nexus
 
 #Start the agent
 sudo puppet resource service puppet ensure=running enable=true
