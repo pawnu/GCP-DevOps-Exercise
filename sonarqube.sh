@@ -30,10 +30,10 @@ sudo sed -i "1 a server=\\$masterfqdn" /etc/puppet/puppet.conf
 sudo wget -qO- https://get.docker.com/ | sh
 
 #Pull sonarqube
-docker pull sonarqube
+sudo docker pull sonarqube
 
 #Run sonarqube
-docker run -d -p 9000:9000 --name sqdemo sonarqube
+sudo docker run -d -p 9000:9000 --name sqdemo sonarqube
 
 #Start the agent
 sudo puppet resource service puppet ensure=running enable=true
