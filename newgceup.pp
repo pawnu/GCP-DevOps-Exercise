@@ -8,7 +8,7 @@ gce_instance { 'puppet-jenkins-demo':
   image                 => 'projects/ubuntu-os-cloud/global/images/ubuntu-1404-trusty-v20170703',
   startup_script        => 'jenkins.sh',
 }
-gce_instance { 'puppet-sonarcube-demo':
+gce_instance { 'puppet-sonarqube-demo':
   ensure                => present,
   description           => 'Agent',
   machine_type          => 'f1-micro',
