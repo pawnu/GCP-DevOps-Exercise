@@ -33,7 +33,7 @@ sudo wget -qO- https://get.docker.com/ | sh
 sudo docker pull cloudesire/tomcat:8-jre8
 
 #Run tomcat
-sudo docker run -d -p 8083:8080 --name tomcatdemo cloudesire/tomcat:7-jre8
+sudo docker run -d -p 8083:8080 -e TOMCAT_PASS="mypass" --name tomcatdemo cloudesire/tomcat:8-jre8
 
 #Start the agent
 sudo puppet resource service puppet ensure=running enable=true
