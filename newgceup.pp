@@ -1,7 +1,7 @@
 gce_instance { 'puppet-jenkins-demo':
   ensure                => present,
   description           => 'Agent',
-  machine_type          => 'f1-micro',
+  machine_type          => 'g1-small',
   zone                  => 'europe-west2-a',
   network               => 'default',
   tags                  => ['puppet', 'agent'],
@@ -11,7 +11,7 @@ gce_instance { 'puppet-jenkins-demo':
 gce_instance { 'puppet-sonarqube-demo':
   ensure                => present,
   description           => 'Agent',
-  machine_type          => 'f1-micro',
+  machine_type          => 'g1-small',
   zone                  => 'europe-west2-a',
   network               => 'default',
   tags                  => ['puppet', 'agent'],
@@ -22,7 +22,7 @@ gce_instance { 'puppet-sonarqube-demo':
 gce_instance { 'puppet-splunk-demo':
   ensure                => present,
   description           => 'Agent',
-  machine_type          => 'f1-micro',
+  machine_type          => 'g1-small',
   zone                  => 'europe-west2-a',
   network               => 'default',
   tags                  => ['puppet', 'agent'],
