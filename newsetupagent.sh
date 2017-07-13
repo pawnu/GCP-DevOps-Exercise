@@ -18,3 +18,6 @@ sudo sed -i "1 a masterip=\\$ip" $dir/nexus.sh
 
 sudo sed -i "1 a masterfqdn=\\$master" $dir/splunk.sh
 sudo sed -i "1 a masterip=\\$ip" $dir/splunk.sh
+
+sudo sed -i "1 a masterfqdn=\\$master" $dir/bitbucket.sh
+sudo sed -i "1 a masterip=\\$ip" $dir/bitbucket.sh
