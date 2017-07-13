@@ -51,3 +51,14 @@ gce_instance { 'puppet-nexus-demo':
   image                 => 'projects/ubuntu-os-cloud/global/images/ubuntu-1404-trusty-v20170703',
   startup_script        => 'nexus.sh',
 }
+
+gce_instance { 'puppet-bitbucket-demo':
+  ensure                => present,
+  description           => 'Agent',
+  machine_type          => 'g1-small',
+  zone                  => 'europe-west2-a',
+  network               => 'default',
+  tags                  => ['puppet', 'agent'],
+  image                 => 'projects/ubuntu-os-cloud/global/images/ubuntu-1404-trusty-v20170703',
+  startup_script        => 'bitbucket.sh',
+}
